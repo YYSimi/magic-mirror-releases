@@ -106,6 +106,7 @@
     </div>
 
     <p class="note">
+      <span id="version-info"></span>
       <a href="https://github.com/YYSimi/magic-mirror-releases/releases">View all releases</a>
     </p>
   </div>
@@ -142,6 +143,11 @@
           document.getElementById('linux-download').classList.remove('loading');
           const ext = linux.name.endsWith('.AppImage') ? '.AppImage' : '.deb';
           document.getElementById('linux-file').textContent = `(${ext})`;
+        }
+
+        // Show version
+        if (release.tag_name) {
+          document.getElementById('version-info').textContent = 'Latest: ' + release.tag_name + ' · ';
         }
       })
       .catch(() => {
