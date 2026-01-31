@@ -32,4 +32,4 @@ Check the [Releases](https://github.com/YYSimi/magic-mirror-releases/releases) p
 
 ## Feedback
 
-Questions or issues? Email easylivingsoftware@gmail.com
+Questions or issues? Email YoulianWroteADanceApp@gmail.com
